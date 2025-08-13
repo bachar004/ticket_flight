@@ -1,6 +1,6 @@
 Ticket Flight est une application Android permettant de réserver un billet d’avion en ligne (sans paiement intégré).
 Elle propose une interface pour rechercher, filtrer et sélectionner des billets selon les critères du voyageur.
-
+NB: pas beaucoup de flight juste quelques un entre 29/4/2025 et 30/4/2025
 # Fonctionnalités
 - Connexion et Inscription : Firebase Realtime Database.
 
