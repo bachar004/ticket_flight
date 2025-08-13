@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_pic"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:layout_width="221dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="396dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="sans-serif"
+        android:text="Fly Anywhere Easily without obstacles"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:padding="15dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnHaveAccount" />
+
+    <Button
+        android:id="@+id/btnHaveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="15dp"
+        android:text="I Have an Account"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        app:cornerRadius="8dp"
+        app:strokeColor="#2196F3"
+        app:strokeWidth="1dp" />
+</LinearLayout>

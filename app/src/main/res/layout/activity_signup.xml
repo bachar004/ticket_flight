@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/img"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signup"
+            tools:context=".signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvSignUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textColor="#82BFDA"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSignUpSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignUpTitle"
+                android:layout_marginTop="8dp"
+                android:text="Please fill in the form to continue"
+                android:textColor="#A00B4E80"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignUpSubtitle"
+        android:layout_marginTop="37dp"
+        android:background="#67FFFFFF"
+        android:drawablePadding="10dp"
+        android:hint="Full Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#3F51B5" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFullName"
+        android:layout_marginTop="17dp"
+        android:background="#67FFFFFF"
+        android:drawablePadding="10dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:digits="0123456789"
+        android:padding="15dp"
+        android:textColor="#3F51B5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginid"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#67FFFFFF"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#3F51B5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign Up Button -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilConfirmPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilPassword"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:background="#67FFFFFF"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textColor="#3F51B5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilConfirmPassword"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#2196F3"
+                android:padding="15dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Login Prompt -->
+
+            <!-- Login Button -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhone"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true">
+
+
+        <EditText
+            android:id="@+id/etloginid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#67FFFFFF"
+            android:hint="login id"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#3F51B5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+                android:id="@+id/tvLoginPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSignUp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:text="Already have an account?"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSignUp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tvLoginPrompt"
+                android:background="@android:color/transparent"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+</RelativeLayout>

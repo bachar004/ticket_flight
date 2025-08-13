@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/login"
+        tools:context=".login"
+        android:background="@drawable/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSignUpTitlee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Welcome Back!"
+            android:textColor="#82BFDA"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSignUpSubtitleee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSignUpTitlee"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="✈️ Log in to book your next flight with ease. Manage your bookings, track your flights, and access exclusive deals. Welcome on board!"
+            android:textColor="#A00B4E80"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            />
+
+        <!-- Full Name Input -->
+    <EditText
+        android:id="@+id/etFullNamee"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignUpSubtitleee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#67FFFFFF"
+        android:drawablePadding="10dp"
+        android:hint="Login id"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#3F51B5" />
+
+
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPasswordd"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etFullNamee"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:hint="Password"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPasswordd"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#67FFFFFF"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUpp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilPasswordd"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="#2196F3"
+        android:padding="15dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvLoginPromptt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignUpp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Don't have an account?"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignUpp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toEndOf="@+id/tvLoginPromptt"
+        android:background="@android:color/transparent"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</RelativeLayout>
